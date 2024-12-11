@@ -84,7 +84,7 @@ The \<path to your data file> argument should be the directory path where the da
 
 ​    From a performance perspective, our primary concerns with streaming learning frameworks are throughput and latency metrics. To evaluate throughput and latency, we employ the same algorithm to first infer and then train on the simulated dataset, **Hyperplane**.  The most critical performance-relevant parameter identified is the batch size.  Consequently, we investigate how performance varies with different batch sizes.
 
-​    Regarding latency, we divide the computing tasks into inference and update phases, which are characterized by distinct computational complexities and communication costs. We further categorize the models into Streaming Logistic Regression and Streaming MLP, as detailed in table below. The batch size is set to ranging from 512 to 4,096, as smaller batch size typically yields lower inference latency, which is challenging to measure accurately due to fluctuations in network communication speed.
+​    Regarding latency, we divide the computing tasks into inference and update phases, which are characterized by distinct computational complexities and communication costs. We further categorize the models into Streaming Logistic Regression and Streaming MLP, as detailed in table below. The batch size is set to ranging from 512 to 4,096, as smaller batch size typically yields lower inference latency, which is challenging to measure accurately due to fluctuations in network communication.
 
 | Size of batch  | Frameworks  |   512    |   1024   |   2048    |   4096    |
 | :------------: | :---------: | :------: | :------: | :-------: | :-------: |
